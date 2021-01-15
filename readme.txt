@@ -1,6 +1,6 @@
-=== S&P 500 Constituents Financials ===
+=== List the S&P 500 Constituents Financials ===
 Contributors: markomaksym
-Tags: create table, create CPT, add metaboxes
+Tags: S&P500, s and p 500, investment, shares, stocks
 Requires at least: 5.0
 Tested up to: 5.6
 Stable tag: 1.0

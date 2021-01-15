@@ -1,11 +1,11 @@
 <?php
 /*
-Plugin Name: S&P 500 Constituents Financials
-Plugin URI: https://github.com/Maxim-us/m
-Description: Brief description
+Plugin Name: List the S&P 500 Constituents Financials
+Plugin URI: https://github.com/Maxim-us/SP-500-Constituents-Financials-plugin
+Description: The plugin display the list of S&P 500 companies
 Author: Marko Maksym
 Version: 1.0
-Author URI: https://github.com/
+Author URI: https://markomaksym.com.ua/
 */
 
 // Exit if accessed directly
