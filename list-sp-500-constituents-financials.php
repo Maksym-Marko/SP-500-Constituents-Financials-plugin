@@ -18,7 +18,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 /*
 * Define MXSAPC_PLUGIN_PATH
 *
-* E:\OpenServer\domains\my-domain.com\wp-content\plugins\s-and-p-500-constituents-financials\s-and-p-500-constituents-financials.php
+* E:\OpenServer\domains\my-domain.com\wp-content\plugins\list-sp-500-constituents-financials\list-sp-500-constituents-financials.php
 */
 if ( ! defined( 'MXSAPC_PLUGIN_PATH' ) ) {
 
@@ -29,7 +29,7 @@ if ( ! defined( 'MXSAPC_PLUGIN_PATH' ) ) {
 /*
 * Define MXSAPC_PLUGIN_URL
 *
-* Return http://my-domain.com/wp-content/plugins/s-and-p-500-constituents-financials/
+* Return http://my-domain.com/wp-content/plugins/list-sp-500-constituents-financials/
 */
 if ( ! defined( 'MXSAPC_PLUGIN_URL' ) ) {
 
@@ -40,7 +40,7 @@ if ( ! defined( 'MXSAPC_PLUGIN_URL' ) ) {
 /*
 * Define MXSAPC_PLUGN_BASE_NAME
 *
-* 	Return s-and-p-500-constituents-financials/s-and-p-500-constituents-financials.php
+* 	Return list-sp-500-constituents-financials/list-sp-500-constituents-financials.php
 */
 if ( ! defined( 'MXSAPC_PLUGN_BASE_NAME' ) ) {
 
@@ -60,7 +60,7 @@ if ( ! defined( 'MXSAPC_TABLE_SLUG' ) ) {
 /*
 * Define MXSAPC_PLUGIN_ABS_PATH
 * 
-* E:\OpenServer\domains\my-domain.com\wp-content\plugins\s-and-p-500-constituents-financials/
+* E:\OpenServer\domains\my-domain.com\wp-content\plugins\list-sp-500-constituents-financials/
 */
 if ( ! defined( 'MXSAPC_PLUGIN_ABS_PATH' ) ) {
 
@@ -84,7 +84,7 @@ if ( ! defined( 'MXSAPC_PLUGIN_VERSION' ) ) {
 if ( ! defined( 'MXSAPC_MAIN_MENU_SLUG' ) ) {
 
 	// version
-	define( 'MXSAPC_MAIN_MENU_SLUG', 'mxsapc-s-and-p-500-constituents-financials-menu' );
+	define( 'MXSAPC_MAIN_MENU_SLUG', 'mxsapc-list-sp-500-constituents-financials-menu' );
 
 }
 

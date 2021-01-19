@@ -33,14 +33,20 @@ class MXSAPC_Enqueue_Scripts_Frontend
 			wp_enqueue_style( 'mxsapc_style', MXSAPC_PLUGIN_URL . 'includes/frontend/assets/css/style.css', [ 'mxsapc_font_awesome' ], MXSAPC_PLUGIN_VERSION, 'all' );
 
 			// add style
-			wp_enqueue_style( 'mxsapc_style_vue', MXSAPC_PLUGIN_URL . 'includes/frontend/assets/css/app.0d197222.css', [], MXSAPC_PLUGIN_VERSION, 'all' );			
+			wp_enqueue_style( 'mxsapc_style_vue', MXSAPC_PLUGIN_URL . 'includes/frontend/assets/css/app.0d197222.css', ['mxsapc_style'], MXSAPC_PLUGIN_VERSION, 'all' );			
 			
 			wp_enqueue_script( 'mxsapc_script', MXSAPC_PLUGIN_URL . 'includes/frontend/assets/js/script.js', [ 'jquery' ], MXSAPC_PLUGIN_VERSION, false );
 
 			// add JS
-			wp_enqueue_script( 'mxsapc_script_vue1', MXSAPC_PLUGIN_URL . 'includes/frontend/assets/js/chunk-vendors.4c470763.js', [], MXSAPC_PLUGIN_VERSION, true );
+			wp_enqueue_script( 'mxsapc_script_vue1', MXSAPC_PLUGIN_URL . 'includes/frontend/assets/js/chunk-vendors.4c470763.js', ['mxsapc_script'], MXSAPC_PLUGIN_VERSION, true );
 
 			wp_enqueue_script( 'mxsapc_script_vue2', MXSAPC_PLUGIN_URL . 'includes/frontend/assets/js/app.81b8ac52.js', ['mxsapc_script_vue1'], MXSAPC_PLUGIN_VERSION, true );
+
+			wp_localize_script( 'mxsapc_script_vue2', 'mxsapc_data_obj_front', [
+
+				'plugin_url' => MXSAPC_PLUGIN_URL
+
+			] );				
 		
 		}
 

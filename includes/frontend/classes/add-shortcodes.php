@@ -19,7 +19,7 @@ class MXSAPC_Add_Shortcodes
 
 			ob_start(); ?>
 
-			<noscript><strong>We're sorry but s-and-p-500-constituents-financials doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript>
+			<noscript><strong>We're sorry but list-sp-500-constituents-financials doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript>
 
 			<div id="mx_s_and_p_app"></div>
 

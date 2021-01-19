@@ -31,7 +31,7 @@ class MXSAPC_Basis_Plugin_Class
 	public static function create_option_for_activation()
 	{
 
-		add_option( 'mxsapc_flush_rewrite_rules', 'go_flush_rewrite_rules' );
+		// add_option( 'mxsapc_flush_rewrite_rules', 'go_flush_rewrite_rules' );
 
 	}
 
