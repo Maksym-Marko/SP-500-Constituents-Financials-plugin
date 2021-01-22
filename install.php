@@ -13,6 +13,8 @@ class MXSAPC_Basis_Plugin_Class
 
 	public static function activate()
 	{
+
+		self::create_option_for_activation();
 		
 
 	}
@@ -32,6 +34,23 @@ class MXSAPC_Basis_Plugin_Class
 	{
 
 		// add_option( 'mxsapc_flush_rewrite_rules', 'go_flush_rewrite_rules' );
+
+		$get_options = get_option( 'mxsapc_columns' );
+
+	    if( ! $get_options ) {
+
+	    	$mxsapc_columns = [
+	    		'Symbol',
+		        'Name',
+		        'Price',
+		        'Sector'
+	    	];
+
+	    	$serialize = maybe_serialize( $mxsapc_columns );
+
+			$updated = update_option( 'mxsapc_columns', $serialize );
+
+	    }
 
 	}
 

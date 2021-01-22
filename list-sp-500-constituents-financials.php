@@ -4,7 +4,7 @@ Plugin Name: List the S&P 500 Constituents Financials
 Plugin URI: https://github.com/Maxim-us/SP-500-Constituents-Financials-plugin
 Description: The plugin display the list of S&P 500 companies
 Author: Marko Maksym
-Version: 1.0
+Version: 1.2
 Author URI: https://markomaksym.com.ua/
 */
 
@@ -74,7 +74,7 @@ if ( ! defined( 'MXSAPC_PLUGIN_ABS_PATH' ) ) {
 if ( ! defined( 'MXSAPC_PLUGIN_VERSION' ) ) {
 
 	// version
-	define( 'MXSAPC_PLUGIN_VERSION', '1.0' ); // Must be replaced before production on for example '1.0'
+	define( 'MXSAPC_PLUGIN_VERSION', '1.2' ); // Must be replaced before production on for example '1.0'
 
 }
 

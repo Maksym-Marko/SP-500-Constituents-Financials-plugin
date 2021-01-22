@@ -19,9 +19,37 @@ class MXSAPC_Add_Shortcodes
 
 			ob_start(); ?>
 
+			<?php
+
+				$get_options = get_option( 'mxsapc_columns' );
+
+			    $options = [];
+
+			    if( $get_options ) {
+
+			      	$options = maybe_unserialize( $get_options );
+
+			    }
+
+			?>
+
 			<noscript><strong>We're sorry but list-sp-500-constituents-financials doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript>
 
-			<div id="mx_s_and_p_app"></div>
+			<script>
+				
+				window.mxsapc_option_columns = [
+
+					<?php foreach ( $options as $key => $value ) {
+
+						echo '"' . $value . '",';
+						
+					} ?>
+
+				];
+
+			</script>
+
+			<div id="mx_s_and_p_app" class="s-and-p-500-constituents-financials"></div>
 
 			<? return ob_get_clean();
 

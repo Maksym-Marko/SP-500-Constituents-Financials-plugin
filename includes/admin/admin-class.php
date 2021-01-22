@@ -54,7 +54,7 @@ class MXSAPC_Admin_Main
 	{
 
 		// ajax requests to main page
-		// MXSAPC_Main_Page_Model::mxsapc_wp_ajax();
+		MXSAPC_Main_Page_Model::mxsapc_wp_ajax();
 
 	}
 
@@ -62,7 +62,13 @@ class MXSAPC_Admin_Main
 	* Routes collection
 	*/
 	public function mxsapc_routes_collection()
-	{		
+	{
+
+		// sub settings menu item
+		MXSAPC_Route::mxsapc_get( 'MXSAPC_Main_Page_Controller', 'settings_menu_item_action', 'NULL', [
+			'menu_title' => 'Settings S&P 500',
+			'page_title' => 'Settings S&P 500 page'
+		], 'settings_snp500_item', true );
 
 	}
 
